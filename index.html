@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+
+.asad{
+    height: 100vh;
+    width: 100%;
+    background: #edf2fc;
+    font-family: sans-serif;
+    position: relative;
+    top: 0;
+}
+nav{
+    width: 84%;
+    margin: auto;
+    padding: 20PX 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #606163;
+}
+nav ul li a:hover{
+    color: #f79420;
+
+}
+.information{
+    margin-left: 7%;
+    margin-top: 12%;
+}
+.information h2{
+    font-size: 75px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+span{
+    color: #f79420;
+}
+#span2{
+    color: white;
+}
+.information p{
+    color: #606163;
+    line-height: 22px;
+}
+/* resume button */
+.information a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 20px 0;
+    border-radius: 6px;
+}
+.image{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.image img{
+    height: 100%;
+    position: absolute;
+    left: 60%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.image:hover .bg-shape{
+    bottom: 40px;
+}
+.image:hover .asad-pic{
+    left: 54%;
+}
+
+.social-media{
+    margin-left: 8%;
+    margin-top: 0px;
+}
+
+.social-media a{
+    font-size: 25px;
+    color: #f79420;
+    margin-top: 15px;
+    margin: 10px 5px;
+
+    
+}
+.table1{
+    
+    margin-top: 100px;
+    margin-left: 40%;
+    border: 1px solid #f79420;
+    /* background-color: lightslategray;... 6ang krdya */
+    color: black;
+    border-radius: 10px;
+    height: 170px;
+    width: 255px;
+   
+    
+  }
+
+  /* for bottom  "Designed By ASAD JN" b*/
+  .table2{
+    background-color: #f79420;
+    font-family: sans-serif;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    
+  }
+
+.box{
+    height: 20px;
+    
+}
+
+#submitbtn{
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f79420;
+    height: 25px;
+    width: 80px;
+    padding: 5px;
+
+}
+#location{
+    margin: 200px 20px;
+
+}
+table.tablefooter{
+
+    border-collapse: collapse;
+  
+    width: 100%;
+    background: rgb(194, 191, 191);
+
+} 
+#tr1{
+    color: #f79420;
+    
+}
+#tr2{
+    color: white;
+}
+
+.container{
+   
+    width: 820px;
+    height: 500px;
+    margin-left: 20%;
+    margin-top: 10%;
+    box-sizing: border-box;
+    
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2,400px);
+    grid-gap: 10px;
+    
+   
+}
+.box1{
+    background-color: #eee;
+    
+
+}
+
+.box2{
+    background-color: #eee;
+}
+.box3{
+    background-color: #eee;
+}
+.box4{
+    background-color: #eee;
+}
+
+.videos{
+    margin: 30px auto 30px;
+    border-radius: 20px;
+    width: 60%;
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    box-shadow: 0px 0px 5px #f79420;
+   
+}
+.videos .box01 iframe{
+    border-radius: 20px;
+}
+.videos .box01{
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px ;
+    
+}
+.videos .box01 h2{
+    
+    margin-left: 80px;
+}
+.videos .box02{
+    border-radius: 20px;
+    box-shadow: 0px 0px 2px ;
+    
+}
+.videos .box02 iframe{
+    border-radius: 20px;
+}
+.videos .box02 h2{
+    
+    margin-left: 60px;
+}
+.usescs{
+    background-color: #f79420;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    margin-top: 20px;
+    padding: 5px;
+    width: 20%;
+    border-top-right-radius: 20px; 
+}
+.usescs abbr{
+    text-decoration: none;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="asad">
+        <nav>
+            <img src="./images/logo.png" alt="my_logo" class="logo" width="60PX">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="projects.html">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="skill.html">SKILLS</a></li>
+                
+            </ul>
+        </nav>
+   
+     
+        <div class="information">
+            <h2>I'm <span>ASAD ULLAH</span></h2>
+            <p style="width: 50%;">
+                Computer Science student at <abbr title="The Agriculture University Peshawar">AUP</abbr>, also student at <abbr title="The University Of Spoken English & Computer Science">USECS</abbr>. I am currently diving into the world of  Web and Mobile App development at <abbr title="Saylani Mass IT Training">SMIT</abbr> Peshawar.
+                Alongside my studies, I express my creativity as a Graphic Designer at EncoderBytes Pvt Ltd Peshawar, where I merge design with technology 
+        to craft visually engaging experiences.Moreover,I have pursued specialized training in IoT through <abbr title="National Vocational & Technical Training Commission">NAVTTC</abbr>, further enriching my skill set.
+        I am driven by a relentless curiosity and a desire to innovate, eager to contribute my expertise to the dynamic field of technology.
+      </p>
+            
+            <a href="./pdf/mycv99.pdf">My Resume</a>
+        </div>
+        <div class="image">
+            <img src="./images/bg.png" class="bg-shape" >
+            <img src="./images/asadpic.png" class="asad-pic" >
+</header> 
+<h2 class="usescs"><abbr title="The University Of Spoken English & Computer Science">USECS</abbr></h2>
+    <div class="videos">
+        <div class="box01">
+           <h2>Introduction</h2>
+           
+           <iframe src="https://drive.google.com/file/d/10iOccyEtLROE7oSva3ir6QzeO_BlYFpu/preview" 
+        width="300px" 
+        height="400px" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+</iframe>
+
+
+            <!-- <video src="https://drive.google.com/uc?export=download&id=14h6wdCX_CVQMyz9qgXqCzUdIoyYw-O8k
+            " controls style="width: 300px;"></video> -->
+           
+        </div>
+        <div class="box02">
+            <h2>Fav Personality</h2>
+            <iframe src="https://drive.google.com/file/d/14h6wdCX_CVQMyz9qgXqCzUdIoyYw-O8k/preview" 
+        width="300px" 
+        border-radius="20px"
+        height="400px" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+        
+</iframe>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box1"><img src="./images/graphic1.jpg" alt="" style="width: 250px; margin-left: 80px; margin-top: 5px;"></div>
+        <div class="box2"><img src="./images/graphic1.jpg" alt="" style="width: 250px; margin-left: 80px; margin-top: 5px;"></div>
+        <div class="box3"><img src="./images/graphic2.jpg" alt="" style="width: 250px; margin-left: 80px; margin-top: 5px;"></div>
+        <div class="box4"><img src="./images/graphic2.jpg" alt="" style="width: 250px; margin-left: 80px; margin-top: 5px;"></div>
+    </div>
+       
+  <form action="contact.html">
+    <table  align-items="center" cellspacing="5px" class="table1">
+  
+      <div>
+      <tr>
+        <td id="table1nep">
+          Full Name:<input type="text" placeholder="Enter Name" required>
+        </td></tr>
+      <tr>
+        <td id="table1nep">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" placeholder="Enter Email" required>
+        </td>
+      </tr>
+      <tr>
+        <td id="table1nep">
+          Phone: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="tel" placeholder="Enter Phone">
+        </td>
+      </tr>
+  </div>
+      <tr>
+        <td>
+          Message:
+      <textarea  cols="30" rows="8" placeholder="Write Message" required></textarea>    
+       <br><br>
+        </td>
+      </tr>
+      
+      <tr>
+      
+          <td colspan="2" >
+            <a href="skills.html"><input type="submit"  id="submitbtn"></a>
+          </td>
+        </tr>
+  
+  
+    </table>
+  </form>
+  
+
+        </div>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/asadjn99"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/asadjn99/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/asadjn99"><i class="fa-brands fa-facebook"></i></a>
+            <a href="mailto:asad.jn99@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://wa.me/923075993029?text="><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        
+    <!-- </div>
+<table class="tablefooter">
+    
+<tr>
+    <th  id="tr1">Quick Links</th>
+    <td></td>
+    
+    <td></td>
+    <td></td>
+    <td></td>
+ 
+</tr>
+
+<tr>
+    
+    <td  id="tr2"><a href="index.html">HOME</a></td>
+</tr>
+
+<tr>
+    <td  id="tr2"><a href="">ABOUT</a></td>
+</tr>
+
+<tr>
+    <td><a href="education.html">EDUCATION</a></td>
+</tr>
+<tr>
+    <td>PORTFOLIO</td>
+    <td>PORTFOLIO</td>
+    <td>PORTFOLIO</td>
+    <td>PORTFOLIO</td>
+    <td>PORTFOLIO</td>
+    <td>PORTFOLIO</td>
+</tr>
+<tr>
+    <td>CONTACT</td>
+    <td>PORTFOLIO</td>
+    <td>PORTFOLIO</td>
+    <td>PORTFOLIO</td>
+</tr>
+<tr>
+    <td>SKILLS</td>
+    <td>PORTFOLIO</td>
+    <td>PORTFOLIO</td>
+    <td>PORTFOLIO</td>
+    <td>PORTFOLIO</td>
+</tr>
+
+
+</table> -->
+  
+    <table class="table2">
+        <tr>
+            <td><span id="span2">DESIGNED BY </span><b>ASAD-JN</b> <span id="span2">WITH</span> &hearts;</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

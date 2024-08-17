@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ByteBrilliance</title>
+  <style>
+    /* CSS for header navigation */
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+nav{
+    width: 84%;
+    margin: auto;
+    padding: 20PX 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #606163;
+}
+nav ul li a:hover{
+    color: #f79420;
+}
+h2{
+  font-family: sans-serif;
+  margin: 40px 0px 0px 20px ;
+}
+
+
+table{
+    margin-top: 100px;
+    background-color: lightslategray;
+    color: #f79420;
+    border-radius: 10px;
+    height: 170px;
+    width: 250px;
+  }
+
+/* CSS for table */
+table {
+      border-collapse: collapse;
+      width: 100%; /* 100% bandi responsive v*/
+    }
+    th, td {
+      border: 1.5px solid rgb(157, 172, 202); /* Add border to cells */
+      padding: 8px; /* Add padding to cells */
+      text-align: left; /* Align text to the left */
+    }
+    th {
+      background-color: #f79420; /* Background color for header cells */
+      color: black;
+    }
+    td {
+      background-color: black; /* Alternate row background color */
+    }
+  
+
+  </style>
+</head>
+<body style="background-color: aliceblue;">
+  <header>
+    <nav>
+      <img src="./images/logo.png" alt="my_logo" class="logo" width="60PX">
+      <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="education.html">EDUCATION</a></li>
+          <li><a href="projects.html">PORTFOLIO</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="skills.html">SKILLS</a></li>
+          
+      </ul>
+  </nav>
+  </header>
+  <section>
+    <h2>EDUCATION</h2>
+
+
+<table>
+  <thead >
+    <tr>
+      <th>Edu_Level</th>
+      <th>School/College</th>
+      <th>City</th>
+      <th colspan="2">Year from-to </th>
+    </tr>
+  </thead>
+
+  <tbody >
+    <tr>
+      <td>SSC</td>
+      <td><abbr title="Govt High School Khall">GHS Khall</abbr></td>
+      <td>Dir L</td>
+      <td>17-19</td>
+    </tr>
+    <tr>
+      <td>HSSC</td>
+      <td><abbr title="Govt Post Graduate College Timergara">GPGC Tmg</abbr></td>
+      <td>Timergara</td>
+      <td>19-21</td>
+    </tr>
+    <tr>
+      <td>University</td>
+      <td><abbr title="Agriculture University Peshawar">AUP</abbr></td>
+      <td>Peshawar</td>
+      <td>21-25</td>
+      
+    </tr>
+
+  </tbody>
+</table>
+
+
+  </section>
+  
+</body>
+</html>
